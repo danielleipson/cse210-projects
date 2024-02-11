@@ -1,11 +1,17 @@
 public class Entry
-{
-    public string _date;
-    public string _promptText;
-    public string _entryText;
+{public DateTime Date { get; set; }
+    public string Prompt { get; set; }
+    public string Text { get; set; }
 
-    public void Display()
+    public Entry(DateTime date, string prompt, string text)
     {
-        
+        Date = date;
+        Prompt = prompt;
+        Text = text;
+    }
+
+    public override string ToString()
+    {
+        return $"{Date} - Prompt: {Prompt}\n{Text}\n";
     }
 }
