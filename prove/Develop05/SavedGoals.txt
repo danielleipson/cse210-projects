@@ -1,0 +1,2 @@
+0
+Simple Goal|Read Daily|Read the scriptures daily for 30 minutes. |200|False
